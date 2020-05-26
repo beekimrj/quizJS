@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Prasnottar</title>
+	</head>
+	<body>
+		<div class="container">
+			<h2> Add Questions </h2>
+			<p>
+			<div id="notice"><i>
+				Please Read Carefully before adding questions
+				<ul>
+					<li>Question shouldn't be Empty</li>
+					<li>Atleast two options are required, you can add upto 5 options</li>
+					<li>select the correct answer for asked question using circle button</li>
+					<li>You can edit your questions until you press 'Start Quiz' button</li>
+				</ul>
+			</i></div>
+		</p>
+			<form>
+				<div class="question" id="questionNumber">Qn.</div><textarea id="question" cols="50"></textarea>
+				<h4>Answers</h4>
+				<div class = "answer">
+					a. <input type="text" name ="answerField" id="answerA"><input type="radio" name="answer" value="0" id="optionA"><br/>
+					b. <input type="text" name ="answerField" id="answerB"><input type="radio" name="answer" value="1" id="optionB"><br/>
+					c. <input type="text" name ="answerField" id="answerC"><input type="radio" name="answer" value="2" id="optionC"><br/>
+					d. <input type="text" name ="answerField" id="answerD"><input type="radio" name="answer" value="3" id="optionD"><br/>
+					e. <input type="text" name ="answerField" id="answerE"><input type="radio" name="answer" value="4" id="optionE"><br/>
+				</div>
+			</form>
+			<div class = "option">
+				<button id="previous" onclick="addPrevious()">Previous</button>
+				<button id="next" onclick="addNext()">Next</button>
+				<br>
+				<br>
+				<button id="startQuizBtn" onclick="startQuiz()">Start Quiz</button>
+			</div>
+		</div>
+		<script src="index.js"></script>
+	</body>
+</html>
