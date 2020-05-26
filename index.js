@@ -216,7 +216,7 @@ function showResult(){
 					${(userAnswers[i] == answerIndex[i]) ?
 						`<td><font color="green">${optionsForQuestion[i][answerIndex[i]]}</font></td>
 						<td>1</td>` : `
-						<td><font color="red">${optionsForQuestion[i][answerIndex[i]]}</font></td>
+						<td><font color="red">${optionsForQuestion[i][userAnswers[i]]}</font></td>
 						<td>0</td>`
 					}
 					</tr>`))
